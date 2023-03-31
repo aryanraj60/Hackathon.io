@@ -52,22 +52,31 @@ const DisplaySubmission = () => {
     <div className="md:px-20 md:py-10 bg-[#F5F5F5]">
       <div className="flex items-center py-5 justify-between">
         <div className="flex items-center gap-5">
-          <p
-            className={`cursor-pointer ${
-              !isFav && "border-b-2 border-green-400"
-            }`}
-            onClick={() => setIsFav(false)}
-          >
-            All Submissions
-          </p>
-          <p
-            className={`cursor-pointer ${
-              isFav && "border-b-2 border-green-400"
-            }`}
-            onClick={() => setIsFav(true)}
-          >
-            Favourite Submissions
-          </p>
+          <div className="flex flex-col items-center">
+            <p
+              className={`cursor-pointer text-gray-500 ${
+                !isFav && "text-black"
+              }`}
+              onClick={() => setIsFav(false)}
+            >
+              All Submissions
+            </p>
+
+            <div className={`w-40 h-1 ${!isFav && "bg-green-600"} mt-1`}></div>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <p
+              className={`cursor-pointer text-gray-500 px-2 ${
+                isFav && "text-black"
+              }`}
+              onClick={() => setIsFav(true)}
+            >
+              Favourite Submissions
+            </p>
+
+            <div className={`w-44 h-1 ${isFav && "bg-green-600"} mt-1`}></div>
+          </div>
         </div>
         <div className="flex items-center md:gap-5">
           <div className="flex items-center gap-2 border border-gray-400 rounded-2xl px-2 py-2">
@@ -90,7 +99,7 @@ const DisplaySubmission = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 min-h-[580px]">
         {filterData().map((submission) => (
           <SubmissionCard submission={submission} key={submission.id} />
         ))}

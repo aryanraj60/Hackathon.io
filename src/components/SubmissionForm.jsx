@@ -145,7 +145,7 @@ const SubmissionForm = () => {
       <div>
         <div className="py-3">
           <label
-            for="first_name"
+            for="Title"
             className="block mb-2 text-base font-medium text-gray-900 dark:text-white"
           >
             Title
@@ -153,8 +153,8 @@ const SubmissionForm = () => {
           <input
             onChange={(e) => setTitle(e.target.value)}
             type="text"
-            id="first_name"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            id="Title"
+            className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             placeholder="Title of your submission"
             required
             value={title}
@@ -172,26 +172,27 @@ const SubmissionForm = () => {
             onChange={(e) => setSummary(e.target.value)}
             type="text"
             id="Summary"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             placeholder="A short summary of your submission (this will be visible with your submission)"
             required
             value={summary}
+            maxLength="220"
           />
         </div>
 
         <div className="py-3 relative">
           <label
-            for="description"
-            className="block mb-2 text-base font-medium text-gray-900 dark:text-white"
+            for="Description"
+            className="block mb-2 text-base font-medium text-gray-900"
           >
             Description
           </label>
           <textarea
             type="text"
-            id="description"
+            id="Description"
             maxLength="3000"
             onChange={handleDescChange}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 h-40 mb-4"
+            className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 h-40 mb-4"
             placeholder="Write a long description of your project. You can describe your idea and approach here."
             required
             value={desc}
@@ -220,7 +221,7 @@ const SubmissionForm = () => {
             type="text"
             onChange={(e) => setHackathonName(e.target.value)}
             id="hackathonName"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             placeholder="Enter the name of the hackathon"
             required
             value={hackathonName}
@@ -235,7 +236,7 @@ const SubmissionForm = () => {
                 <input
                   type="date"
                   onChange={(e) => setStartDate(e.target.value)}
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   placeholder="Select date"
                   required
                   value={startDate}
@@ -250,7 +251,7 @@ const SubmissionForm = () => {
                 <input
                   type="date"
                   onChange={(e) => setEndDate(e.target.value)}
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   placeholder="Select date"
                   required
                   value={endDate}
@@ -271,7 +272,7 @@ const SubmissionForm = () => {
             type="text"
             onChange={(e) => setGithubLink(e.target.value)}
             id="github"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             placeholder="Enter your submission’s public GitHub repository link"
             required
             value={githubLink}
@@ -289,7 +290,7 @@ const SubmissionForm = () => {
             type="text"
             onChange={(e) => setOtherLink(e.target.value)}
             id="otherLink"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             placeholder="You can upload a video demo or URL of you demo app here."
             value={otherLink}
           />

@@ -1,7 +1,5 @@
 import { v4 } from "uuid";
 
-const sevenDaysAgo = new Date().getTime() - 7 * 24 * 60 * 60 * 1000; // Get the timestamp for 7 days ago
-
 export const initialData = [
   {
     id: v4(),
@@ -16,7 +14,7 @@ export const initialData = [
     desc: "",
     hackathonName: "Oceanic Treasure Hunt",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    timestamp: new Date(sevenDaysAgo),
+    timestamp: new Date(new Date().getTime() - 6 * 24 * 60 * 60 * 1000),
   },
   {
     id: v4(),
@@ -31,7 +29,7 @@ export const initialData = [
     desc: "",
     hackathonName: "Oceanic Treasure Hunt",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    timestamp: new Date(sevenDaysAgo),
+    timestamp: new Date(new Date().getTime() - 8 * 24 * 60 * 60 * 1000),
   },
   {
     id: v4(),
@@ -46,7 +44,7 @@ export const initialData = [
     desc: "",
     hackathonName: "Oceanic Treasure Hunt",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    timestamp: new Date(sevenDaysAgo),
+    timestamp: new Date(new Date().getTime() - 9 * 24 * 60 * 60 * 1000),
   },
   {
     id: v4(),
@@ -60,7 +58,7 @@ export const initialData = [
     desc: "",
     hackathonName: "Oceanic Treasure Hunt",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    timestamp: new Date(sevenDaysAgo),
+    timestamp: new Date(new Date().getTime() - 12 * 24 * 60 * 60 * 1000),
   },
   {
     id: v4(),
@@ -75,7 +73,7 @@ export const initialData = [
     desc: "",
     hackathonName: "Oceanic Treasure Hunt",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    timestamp: new Date(sevenDaysAgo),
+    timestamp: new Date(new Date().getTime() - 16 * 24 * 60 * 60 * 1000),
   },
   {
     id: v4(),
@@ -89,7 +87,7 @@ export const initialData = [
     desc: "",
     hackathonName: "Oceanic Treasure Hunt",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    timestamp: new Date(sevenDaysAgo),
+    timestamp: new Date(new Date().getTime() - 28 * 24 * 60 * 60 * 1000),
   },
 ];
 

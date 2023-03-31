@@ -8,7 +8,7 @@ const SubmissionCard = ({ submission }) => {
   return (
     <Link
       to={`/submission-detail/${id}`}
-      className="bg-white p-4 relative pb-7 rounded-xl shadow-sm shadow-slate-300 block"
+      className="bg-white p-4 relative pb-7 rounded-xl shadow-sm shadow-slate-300 block max-h-[300px]"
     >
       <div className="flex items-center gap-4">
         <img
@@ -20,7 +20,7 @@ const SubmissionCard = ({ submission }) => {
         />
         <h2 className="text-xl">{title}</h2>
       </div>
-      <p className="py-4 mb-5">{summary}</p>
+      <p className="mt-5 mb-5">{summary}</p>
       <span className="absolute bottom-0 right-2 text-gray-400 py-3 pr-2">
         uploaded {moment(timestamp).fromNow()}
       </span>
