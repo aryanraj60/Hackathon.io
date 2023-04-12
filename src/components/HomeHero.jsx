@@ -18,7 +18,7 @@ const HomeHero = () => {
           </p>
           <Link
             to={"/upload-submission"}
-            className="bg-[#44924C] py-2 px-2 rounded-lg mt-5"
+            className="bg-[#44924C] py-2 px-3 rounded-lg mt-5"
           >
             Upload Submission
           </Link>

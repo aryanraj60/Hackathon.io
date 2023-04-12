@@ -99,7 +99,7 @@ const DisplaySubmission = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 min-h-[580px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 min-h-[300px]">
         {filterData().map((submission) => (
           <SubmissionCard submission={submission} key={submission.id} />
         ))}
